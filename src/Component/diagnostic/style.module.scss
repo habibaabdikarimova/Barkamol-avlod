@@ -1,0 +1,58 @@
+.diagnostic{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #012245;
+    padding: 30px;
+    border-radius: 30px;
+
+    li{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        h5{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+
+        p{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .diagnosticimg{
+        display: grid;
+        place-items: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+       background-color: #fff;
+       .img1{
+        width: 45px;
+        height: 37px;
+       }
+       .img2{
+        width: 41px;
+        height: 25px;
+       }
+       .img3{
+        width: 50px;
+        height: 30px;
+       }
+       .img4{
+        width: 45px;
+        height: 35px;
+       }
+    }
+    
+}

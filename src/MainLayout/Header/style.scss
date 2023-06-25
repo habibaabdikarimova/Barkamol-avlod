@@ -1,0 +1,136 @@
+header{
+    position: absolute;
+    top: 50px;
+    z-index: 11;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(49, 61, 75, 0.15);
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+       margin: 4px 0; 
+    }
+    .ul{
+        // position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+    
+        li{
+            display: flex;
+            align-items: center;
+            // gap: 7px;
+    
+            a{
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 24px;
+                color: #000000;
+                &:hover{
+                    color: rgb(150, 148, 148);
+                    transform: scale(1.09);
+                }
+                // width: 50%;
+            }
+            // span{
+            //     display: inline-block;
+            //     transform: rotate(90deg);
+            // }
+           
+        }
+       
+    }
+
+    .vector1{
+        display: inline-block;
+        margin-left: 5px;
+        width: 11px;
+        height: 6px;
+    }
+    .nav_bars{
+        display: none;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+ 
+}
+
+header .ul li a{
+    color: rgb(139, 141, 141);
+    font-weight: 400;
+
+}
+.uk-subnav>*>:first-child{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000; 
+}
+  
+
+// .uk-dropdown ф{
+//     a{
+
+//         color: #ffffff; /* ваш желаемый цвет текста */
+//     }
+//     background-color: #ff0000; /* ваш желаемый цвет фона */
+//   }
+//   Вы можете настроить цвет фона и цвет текста, чтобы соответствовать вашим требованиям.
+
+// .uk-subnav>*> :first-child{
+//    margin-top: 100px;
+// }
+.uk-nav {
+    li{
+        a{
+            color: aqua;
+        }
+    }
+}
+.dropdownTtitle{
+    background-color: #000000;
+}
+
+@media(max-width:980px){
+    header{
+        .ul{
+            position: fixed;
+            top: -20px;
+            left: -400%;
+            z-index: 123;
+            flex-direction: column; 
+            justify-content: center;
+            padding: 15%;  
+            width: 60%;
+            height: 100%;
+            background-color: #f9e3e3;
+            transition: 2s;
+            margin-top: 0;
+            li{
+                justify-content: space-between;
+                margin-bottom: 15%;
+            } 
+        }
+        .bars{
+            left: 0;              
+        }
+        .nav_bars{
+            visibility: visible;
+            opacity: 5;
+            display: inline-block;
+        }
+        .close_bars{
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+    }
+}
